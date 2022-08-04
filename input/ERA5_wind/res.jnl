@@ -1,0 +1,17 @@
+cancel data/all
+cancel var/all
+use ERA5_IO_01_91_21_old.nc
+set memory/size=5.e12
+let u10_=u10
+let v10_=v10
+!list/file=test.nc/formal=cdf/clob u10_,v10_
+cancel data/all
+cancel var/all
+use test.nc
+set memory/size=5.e12
+let u10=u10_
+let v10=v10_
+list/file=ERA5_IO_01_91_21.nc/formal=cdf/clob u10,v10
+cancel data/all
+cancel var/all
+!sp rm test.nc

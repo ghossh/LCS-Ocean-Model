@@ -1,0 +1,10 @@
+cdo    remapbil: Bilinear weights from lonlat (359x239) to lonlat (897x597) grid
+Error (cdf_create): ERA5_IO_01_91_21.nc: Permission denied
+cdf_create        : ncid = -1  mode = 4096  chunksizehint = 0 file = ERA5_IO_01_91_21.nc
+
+cdo    remapbil: Bilinear weights from lonlat (359x239) to lonlat (897x597) grid
+cdo    remapbil: Processed 1943221048 values from 2 variables over 11324 timesteps [400.92s 179MB].
+readline: /etc/inputrc: line 19: term: unknown variable name
+
+cdo    remapbil (Abort): Open failed on ./../era5_91_92.nc!
+cdo    remapbil: Processed 1943221048 values from 2 variables over 11324 timesteps [946528.34s 170MB].

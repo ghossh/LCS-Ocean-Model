@@ -1,0 +1,5 @@
+rm -rf lcs.exe
+rm -rf fort.*
+gfortran -o lcs.exe -I/home/NCAOR/supriyog/model_lcs/lcs_model0.1_ERA5_forcing/model/LCSCR_model0.1/netcdf-if/include  -L/home/NCAOR/supriyog/model_lcs/lcs_model0.1_ERA5_forcing/model/LCSCR_model0.1/netcdf-if/lib  -O mr.f -O ungeneral.f -O unspecial.f -O vngeneral.f -O vnspecial.f -O  readrar.f ./header_files/start_origin.f restart.f output.f -O pnbound.f -O lonlat.f -O lonlat_damp.f -O  wind_new.f    -lnetcdf 
+./lcs.exe
+rm -rf fort.*
